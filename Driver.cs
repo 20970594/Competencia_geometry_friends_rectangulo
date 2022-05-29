@@ -351,7 +351,7 @@ namespace GeometryFriendsAgents
                     }
                     return Moves.MOVE_RIGHT;
                 }
-
+                
             }
             if (direction == 4 || direction == 5 || direction == 3)
             {
