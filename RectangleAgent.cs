@@ -339,6 +339,7 @@ namespace GeometryFriendsAgents
                 }
             }
             //Dijkstra dijkstra = new Dijkstra();
+            //hola
             SubgoalAStar sgAstar = new SubgoalAStar(0, diamondNodes, 2000, 0);
             route = sgAstar.Run();
             int diamondsToCollect = nCollectiblesLeft - 1;
