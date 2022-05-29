@@ -20,7 +20,7 @@ namespace GeometryFriendsAgents
             this.diamond = diamond;
         }
 
-        public override bool Equals(Object obj)
+        /*public override bool Equals(Object obj)
         {
             // Check for null values and compare run-time types.
             if (obj == null || GetType() != obj.GetType())
@@ -28,7 +28,7 @@ namespace GeometryFriendsAgents
 
             Node n = (Node)obj;
             return (x == n.x) && (y == n.y) && (diamond == n.diamond);
-        }
+        }*/
 
         public override String ToString()
         {

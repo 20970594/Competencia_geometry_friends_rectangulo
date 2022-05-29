@@ -9,9 +9,6 @@ using System.Drawing;
 
 namespace GeometryFriendsAgents
 {
-    /// <summary>
-    /// A rectangle agent implementation for the GeometryFriends game that demonstrates simple random action selection.
-    /// </summary>
     class RectangleAgent : AbstractRectangleAgent
     {
         //agent implementation specificiation
