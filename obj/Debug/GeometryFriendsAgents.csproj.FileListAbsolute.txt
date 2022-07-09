@@ -4,9 +4,9 @@ C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\Geom
 C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\GeometryFriendsGame-Inicial\obj\Debug\GeometryFriendsAgents.csproj.CoreCompileInputs.cache
 C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\GeometryFriendsGame-Inicial\obj\Debug\GeometryFriendsAgents.dll
 C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\GeometryFriendsGame-Inicial\obj\Debug\GeometryFriendsAgents.pdb
-C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\GeometryFriendsGame\GeometryFriendsGame\Release\Agents\GeometryFriendsAgents.dll
-C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\GeometryFriendsGame\GeometryFriendsGame\Release\Agents\GeometryFriendsAgents.pdb
 C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\GeometryFriendsGame\obj\Debug\GeometryFriendsAgents.csproj.AssemblyReference.cache
 C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\GeometryFriendsGame\obj\Debug\GeometryFriendsAgents.csproj.CoreCompileInputs.cache
-C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\GeometryFriendsGame\obj\Debug\GeometryFriendsAgents.dll
-C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\GeometryFriendsGame\obj\Debug\GeometryFriendsAgents.pdb
+C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\GeometryFriendsGame\GeometryFriendsGame\Release\Agents\DijkstraAgent.dll
+C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\GeometryFriendsGame\GeometryFriendsGame\Release\Agents\DijkstraAgent.pdb
+C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\GeometryFriendsGame\obj\Debug\DijkstraAgent.dll
+C:\Users\asus\Desktop\IDVRV\3°año\Inteligencia artificial\GeometryFriends\GeometryFriendsGame\obj\Debug\DijkstraAgent.pdb

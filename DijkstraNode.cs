@@ -8,14 +8,14 @@ namespace GeometryFriendsAgents
     class DijkstraNode
     {
         public int nodeIndex;
-        public DijkstraNode cameFrom;
-        public List<int> collectedDiamonds;
+        /*public DijkstraNode cameFrom;
+        public List<int> collectedDiamonds;*/
 
-        public DijkstraNode(int nodeIndex, DijkstraNode cameFrom, List<int> collectedDiamonds)
+        public DijkstraNode(int nodeIndex)
         {
             this.nodeIndex = nodeIndex;
-            this.cameFrom = cameFrom;
-            this.collectedDiamonds = collectedDiamonds;
+            /*this.cameFrom = cameFrom;
+            this.collectedDiamonds = collectedDiamonds;*/
         }
     }
 }

@@ -13,7 +13,7 @@ namespace GeometryFriendsAgents
     {
         //agent implementation specificiation
         private bool implementedAgent;
-        private string agentName = "RandRect";
+        private string agentName = "Dijkstra";
 
         //auxiliary variables for agent action
         private Moves currentAction;

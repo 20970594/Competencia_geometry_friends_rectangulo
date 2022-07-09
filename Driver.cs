@@ -119,11 +119,11 @@ namespace GeometryFriendsAgents
             if (distanceList.Count == 40 && distanceList[0] == distanceList[39] && RectangleAgent.nCollectiblesLeft > 0)
             {
                 System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
-                int astarAction = UseSubgoalAStar(x, centerY);
+                int dijkstraAction = UseDijkstra(x, centerY);
                 Log.LogInformation("Driver - Route recalc with Subgoal AStar in ms: " + sw.ElapsedMilliseconds);
-                if (astarAction >= 0)
+                if (dijkstraAction >= 0)
                 {
-                    return (Moves)astarAction;
+                    return (Moves)dijkstraAction;
                 }
 
             }
@@ -523,15 +523,8 @@ namespace GeometryFriendsAgents
             }
             return true;
         }
-        
+
         private int UseDijkstra(int x, int centerY)
-        {
-
-
-            return 0;
-        }
-
-        private int UseSubgoalAStar(int x, int centerY)
         {
             Log.LogInformation("Driver Subgoal AStar - Subgoal AStar start");
 
@@ -561,14 +554,14 @@ namespace GeometryFriendsAgents
             this.directionMap = RectangleAgent.directionMap;
 
             Dijkstra dijkstra = new Dijkstra(0, diamondNodes, 0);
-            SubgoalAStar sgAstar = new SubgoalAStar(0, diamondNodes, 2000, 0);
+            //SubgoalAStar sgAstar = new SubgoalAStar(0, diamondNodes, 2000, 0);
             //route = sgAstar.Run();
             route = dijkstra.Run();
             int diamondsToCollect = diamondNodes.Count - 1;
             while (route == null)
             {
                 dijkstra = new Dijkstra(0, diamondNodes, 0);
-                sgAstar = new SubgoalAStar(0, diamondNodes, 2000, diamondsToCollect);
+                //sgAstar = new SubgoalAStar(0, diamondNodes, 2000, diamondsToCollect);
                 route = dijkstra.Run();
                 diamondsToCollect--;
                 if (diamondsToCollect == 0)

@@ -46,12 +46,12 @@ namespace GeometryFriendsAgents
 
 			Q = new List<DijkstraNode>();
 
-			DijkstraNode startNode = new DijkstraNode(start, null, new List<int>());
+			DijkstraNode startNode = new DijkstraNode(start);
 			Q.Add(startNode);
 
 			for(int i = 1; i < V.Length; i++)
 			{
-				Q.Add(new DijkstraNode(i, null, new List<int>()));
+				Q.Add(new DijkstraNode(i));
 			}
 		}
 		public Queue<Node> Run()
@@ -123,7 +123,7 @@ namespace GeometryFriendsAgents
                 }
             }
 
-			while(previus[m] != null)
+			while(previus[m] != 0)
             {
 				route.Enqueue(RectangleAgent.nodes[m]);
 				m = previus[m];
