@@ -326,6 +326,7 @@ namespace GeometryFriendsAgents
             Log.LogInformation("Route calc start");
 
             Queue<Node> route = new Queue<Node>();
+            Queue<Node> route2 = new Queue<Node>();
             System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
             List<int> diamondNodes = new List<int>();
             for (int n = 0; n < nodes.Count; n++)
@@ -335,25 +336,29 @@ namespace GeometryFriendsAgents
                     diamondNodes.Add(n);
                 }
             }
-            //Dijkstra dijkstra = new Dijkstra();
-            SubgoalAStar sgAstar = new SubgoalAStar(0, diamondNodes, 2000, 0);
-            route = sgAstar.Run();
+            Dijkstra dijkstra = new Dijkstra(0, diamondNodes, 0);
+            route2 = dijkstra.Run();
+            /*SubgoalAStar sgAstar = new SubgoalAStar(0, diamondNodes, 2000, 0);
+            route = sgAstar.Run();*/
             int diamondsToCollect = nCollectiblesLeft - 1;
             while (route == null)
             {
                 if (diamondsToCollect == 0)
                 {
-                    route = new Queue<Node>();
+                    //route = new Queue<Node>();
+                    route2 = new Queue<Node>();
                     break;
                 }
-                sgAstar = new SubgoalAStar(0, diamondNodes, 2000, diamondsToCollect);
-                route = sgAstar.Run();
+                dijkstra = new Dijkstra(0, diamondNodes, 0);
+                route2 = dijkstra.Run();
+                /*sgAstar = new SubgoalAStar(0, diamondNodes, 2000, diamondsToCollect);
+                route = sgAstar.Run();*/
                 diamondsToCollect--;
             }
             Log.LogInformation("Elapsed Subgoal AStar time in ms: " + sw.ElapsedMilliseconds);
             Log.LogInformation("Route calc end");
             
-            return route;
+            return route2;
         }
         private void CreateObstacleOpenSpaceArray()
         {

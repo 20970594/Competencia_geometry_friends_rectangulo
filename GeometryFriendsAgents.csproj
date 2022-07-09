@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CircleAgent.cs" />
+    <Compile Include="Dijkstra.cs" />
+    <Compile Include="DijkstraNode.cs" />
     <Compile Include="Driver.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
