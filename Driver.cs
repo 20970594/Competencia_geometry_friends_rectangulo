@@ -554,14 +554,11 @@ namespace GeometryFriendsAgents
             this.directionMap = RectangleAgent.directionMap;
 
             Dijkstra dijkstra = new Dijkstra(0, diamondNodes, 0);
-            //SubgoalAStar sgAstar = new SubgoalAStar(0, diamondNodes, 2000, 0);
-            //route = sgAstar.Run();
             route = dijkstra.Run();
             int diamondsToCollect = diamondNodes.Count - 1;
             while (route == null)
             {
                 dijkstra = new Dijkstra(0, diamondNodes, 0);
-                //sgAstar = new SubgoalAStar(0, diamondNodes, 2000, diamondsToCollect);
                 route = dijkstra.Run();
                 diamondsToCollect--;
                 if (diamondsToCollect == 0)

@@ -338,21 +338,16 @@ namespace GeometryFriendsAgents
             }
             Dijkstra dijkstra = new Dijkstra(0, diamondNodes, 0);
             route2 = dijkstra.Run();
-            /*SubgoalAStar sgAstar = new SubgoalAStar(0, diamondNodes, 2000, 0);
-            route = sgAstar.Run();*/
             int diamondsToCollect = nCollectiblesLeft - 1;
             while (route == null)
             {
                 if (diamondsToCollect == 0)
                 {
-                    //route = new Queue<Node>();
                     route2 = new Queue<Node>();
                     break;
                 }
                 dijkstra = new Dijkstra(0, diamondNodes, 0);
                 route2 = dijkstra.Run();
-                /*sgAstar = new SubgoalAStar(0, diamondNodes, 2000, diamondsToCollect);
-                route = sgAstar.Run();*/
                 diamondsToCollect--;
             }
             Log.LogInformation("Elapsed Subgoal AStar time in ms: " + sw.ElapsedMilliseconds);
